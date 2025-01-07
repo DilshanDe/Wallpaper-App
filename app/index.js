@@ -3,6 +3,7 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { hp, wp } from '../helpers/comman'
 import { LinearGradient } from 'expo-linear-gradient'
+import Animated, { FadeInDown } from 'react-native-reanimated'
 
 const WelcomeScreen = () => {
   return (
@@ -15,7 +16,7 @@ const WelcomeScreen = () => {
       />
 
       {/*liner gradient*/}
-      <View style={{flex:1}}>
+      <Animated.View entering={FadeInDown.duration(600)} style={{flex:1}}>
         <LinearGradient
             colors={['rgba(255,255,255,0)','rgba(255,255,255,0.5)','white','white']}
             style={styles.gradient}
@@ -23,7 +24,7 @@ const WelcomeScreen = () => {
             end={{x:0.5, y:0.8}}
         />
 
-      </View>
+      </Animated.View>
 
     </View>
   )
