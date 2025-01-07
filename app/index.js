@@ -40,6 +40,9 @@ const styles=StyleSheet.create({
   },
   gradient:{
     width:wp(100),
+    height:hp(65),
+    bottom:0,
+    position:'absolute'
   }
 
 })
