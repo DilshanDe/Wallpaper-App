@@ -23,6 +23,14 @@ const WelcomeScreen = () => {
             start={{x:0.5,y:0}}
             end={{x:0.5, y:0.8}}
         />
+        {/*content*/}
+        <View style={styles.contentContainer}>
+          <Text
+            style={styles.title}>
+              Pixels
+
+          </Text>
+        </View>
 
       </Animated.View>
 
