@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, Pressable } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { hp, wp } from '../helpers/comman'
@@ -31,10 +31,15 @@ const WelcomeScreen = () => {
 
           </Text>
           <Text
-            style={styles.title}>
+            style={styles.punchline}>
                Every Pixels Tells a Story
 
           </Text>
+          <View>
+            <Pressable style={styles.startButton}>
+              <Text style={styles.startText}>Start Explore</Text>
+            </Pressable>
+          </View>
         </View>
 
       </Animated.View>
