@@ -30,6 +30,11 @@ const WelcomeScreen = () => {
               Pixels
 
           </Text>
+          <Text
+            style={styles.title}>
+               Every Pixels Tells a Story
+
+          </Text>
         </View>
 
       </Animated.View>
