@@ -93,6 +93,9 @@ const styles=StyleSheet.create({
   },
   startText:{
     color:theme.colors.white,
+    fontSize:hp(3),
+    fontWeight:theme.fontWeights.medium,
+    letterSpacing:1,
   }
 
 
