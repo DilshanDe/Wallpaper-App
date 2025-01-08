@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar'
 import { hp, wp } from '../helpers/comman'
 import { LinearGradient } from 'expo-linear-gradient'
 import Animated, { FadeInDown } from 'react-native-reanimated'
+import { theme } from '../constants/theme'
 
 const WelcomeScreen = () => {
   return (
@@ -62,8 +63,43 @@ const styles=StyleSheet.create({
     height:hp(65),
     bottom:0,
     position:'absolute'
+  },
+  contentContainer:{
+    flex:1,
+    alignItems:'center',
+    justifyContent:'flex-end',
+    gap:14,
+  },
+  title:{
+    fontSize:hp(8),
+    color:theme.colors.neutral(0.9),
+    fontWeight:theme.fontWeights.bold,
+
+  },
+  punchline:{
+    fontSize:hp(2),
+    letterSpacing:1,
+    marginBottom:10,
+    fontWeight:theme.fontWeights.medium,
+
+  },
+  startButton:{
+    marginBottom:50,
+    backgroundColor:theme.colors.neutral(0.9),
+    padding:15,
+    paddingHorizontal:90,
+    borderRadius:theme.radius.xl,
+    borderCurve:'continuous',
+  },
+  startText:{
+    color:theme.colors.white,
   }
 
+
+
+
+
+  
 })
 
 export default WelcomeScreen
