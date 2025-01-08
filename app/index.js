@@ -26,11 +26,12 @@ const WelcomeScreen = () => {
         />
         {/*content*/}
         <View style={styles.contentContainer}>
-          <Text
+          <Animated.Text
+            entering={FadeInDown.delay(400).springify()}
             style={styles.title}>
               Pixels
 
-          </Text>
+          </Animated.Text>
           <Text
             style={styles.punchline}>
                Every Pixels Tells a Story
