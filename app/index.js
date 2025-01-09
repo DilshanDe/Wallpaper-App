@@ -69,16 +69,16 @@ const styles=StyleSheet.create({
     flex:1,
     alignItems:'center',
     justifyContent:'flex-end',
-    gap:14,
+    gap:15,
   },
   title:{
-    fontSize:hp(8),
+    fontSize:hp(9),
     color:theme.colors.neutral(0.9),
     fontWeight:theme.fontWeights.bold,
 
   },
   punchline:{
-    fontSize:hp(2),
+    fontSize:hp(3),
     letterSpacing:1,
     marginBottom:10,
     fontWeight:theme.fontWeights.medium,
