@@ -66,7 +66,7 @@ const styles=StyleSheet.create({
     position:'absolute'
   },
   contentContainer:{
-    flex:2,
+    flex:1,
     alignItems:'center',
     justifyContent:'flex-end',
     gap:15,
